@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InputField = ({text,setText,addTodo}) => {
+const InputField = ({text,setText, handleSubmit}) => {
 
     return (
         <div>
@@ -10,7 +10,7 @@ const InputField = ({text,setText,addTodo}) => {
                     onChange={(e)=>setText(e.target.value)}
                 />
                 <button
-                    onClick={addTodo}
+                    onClick={handleSubmit}
                 >
                     add todo
                 </button>
