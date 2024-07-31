@@ -15,6 +15,13 @@ const TodoList = () => {
                     />
                 })
             }
+            <hr/>
+            <h4>
+                {`Total task all:${todos.length}`}
+            </h4>
+            <h4>
+                {`Total task completed:${todos.filter(({completed})=>completed===true).length}`}
+            </h4>
         </ul>
     );
 };
