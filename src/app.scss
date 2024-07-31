@@ -1,0 +1,34 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.App{
+  margin-top:12px ;
+  text-align: center;
+}
+.text-field{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.delete{
+  color: red;
+  cursor: pointer;
+}
+.todos{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.todo-item{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+button{
+  cursor: pointer;
+}
+input:checked+span{
+  text-decoration: line-through;
+}
